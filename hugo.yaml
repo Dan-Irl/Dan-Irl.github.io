@@ -5,7 +5,8 @@ languageCode: en-us
 title: Dialog
 theme: [PaperMod]
 
-tableOfContents: true
+params:
+  
 
 markup:
   tableOfContents:
