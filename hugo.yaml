@@ -4,3 +4,9 @@ baseURL: "https://https://dan-irl.github.io/"
 languageCode: en-us
 title: Dialog
 theme: [PaperMod]
+
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
