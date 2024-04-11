@@ -6,7 +6,10 @@ title: Dialog
 theme: [PaperMod]
 
 params:
-  
+  author: Dan Johansson
+  ShowToc: true
+  ShowReadingTime: true
+
 
 markup:
   tableOfContents:
