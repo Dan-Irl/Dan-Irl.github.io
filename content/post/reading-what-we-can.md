@@ -16,6 +16,7 @@ I'll be updating this post with short thoughts and summaries of each reading mat
 
 * Day 1: [*Preventing an AI-related catastrophe*](https://80000hours.org/problem-profiles/artificial-intelligence/)
 * Day 1: [The AI Revolution](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html)
+* Day 2: [AGI Safety From First Principles](https://drive.google.com/file/d/1uK7NhdSKprQKZnRjU58X7NLA1auXlWHt/view)
 
 
 
@@ -72,7 +73,7 @@ More advanced societies progress faster than less advanced ones due to factors l
 
 * **Understanding the scope of AGI/ASI and the scaling of computers:** 
 "Nothing will make you appreciate human intelligence like learning about how unbelievably challenging it is to try to create a computer as smart as we are." However, once a computer achieves human-level intelligence (AGI), it gains significant advantages:
-  1. Speed - Modern microprocessors are already 10 million times faster then the brain (In neuron activation speed). Allowing the computer to perform the same cognitive task as a human but simply much faster.
+  1. Speed - Modern microprocessors are already 10 million times faster then the brain (In neuron activation speed compared to transistor). Allowing the computer to perform the same cognitive task as a human but simply much faster.
   2. Computers surpass humans in scaling potential (RAM, storage, parallel computation, global knowledge access). Physical limitations restrict humans, while computers can endlessly share knowledge, parallelize tasks, and avoid the need for rest. This dramatically accelerates their progress.
 
 * **The *POTENTIAL* incomprehensible intellect of ASI:**
@@ -82,3 +83,66 @@ More advanced societies progress faster than less advanced ones due to factors l
 Tim notes that evolution only optimized humans for survival long enough to reproduce and raise offspring – not  for lifespans of 60, 70, or 80+ years. W.B. Yeats' quote, “a soul fastened to a dying animal,” encapsulates this mismatch between our intellect and our physical limitations. The thought of being on the cusp of an intelligence explosion driven by ASI, yet having it arrive potentially a decade too late for my own lifetime, admittedly fills me with a sense of FOMO.  Perhaps the best we can do is to contribute meaningfully to humanity's advancement, even if we don't fully experience the fruits of that labor.
 
 
+
+## Day 2: [AGI Safety From First Principles](https://drive.google.com/file/d/1uK7NhdSKprQKZnRjU58X7NLA1auXlWHt/view)
+
+
+**Thoughts and summary:**
+
+This reading by [Richard Ngo](https://www.richardcngo.com/) felt much more familiar to read since it was much more scientific in its writing than the previous two readings. Ngo introduced the "second species" argument, in which humans become the second most powerful entity on the planet. Ngo then proceeds to present many interesting arguments both for and against the "second species" event happening. The reading focuses more on general and philosophical arguments rather than technical ones, which makes it much more digestible for any reader. Ngo also introduces many additional concepts and readings which makes this report a highly valuable work in my opinion.  
+
+**Key Takeaways / Points:**
+
+* **Second species argument:**  Humans could lose their position as the most powerful entity on Earth and their ability to control future development.
+
+* **Legg and Hutter definition of intelligence:** "Intelligence as the ability to achieve goals in a wide range of environments." AI can achieve high intelligence in two ways:
+    1. **Task-Based Approach:** An agent is optimized for many specific tasks.
+    2. **Generalization-Based Approach:** An agent can solve new tasks by generalizing from previous experience.
+
+* **Understanding our evolution:**  "One potential obstacle to the generalization-based approach succeeding is the possibility that specific features of the ancestral environment, or of human brains, were necessary for general intelligence to arise". It's crucial to analyze what enabled our transition into social, intelligent beings capable of driving our own evolution. This may hold keys to replicating general intelligence in AI.
+
+* **Recursive AI improvement:** Ngo suggests a scenario where many AGIs replicate themselves, find better training regimens, and spread this knowledge to create smarter AGIs. This network would drive improvement, not just a single AGI self-improving. He notes that "the retraining step may be bottlenecked by compute even if an AGI is able to design algorithmic improvements very fast," meaning an AGI's progress might still be tied to available computing power, unlike human intellect.
+
+* **AGI alignment and retraining:**  "For an AGI to trust that its goals will remain the same under retraining will likely require it to solve many of the same problems that the field of AI safety is currently tackling". Ensuring a robust, aligned goal is difficult and a huge topic in AI safety. This would also apply to an AGI, indicating we might have solved alignment before an AGI can solve it for itself to enable recursive improvement.
+
+* **Agency vs. previous definitions:** Ngo compares previous attempts to describe agency, such as mesa-optimizers (Hubinger et al.), to his own refined definition that outlines the cognitive abilities of a goal-oriented agent:
+    1. **Self-Awareness:** Understands its place in the world and the impact of its actions.
+    2. **Planning:** Considers a wide range of potential actions over the long term.
+    3. **Consequentialism:** Chooses the plan likely to yield the most desirable outcome.
+    4. **Scale:** Decisions account for large-scale, long-term effects. 
+    5. **Coherence:** Internal unity drives the implementation of a single optimal plan.
+    6. **Flexibility:** Able to adapt plans as the situation demands.
+
+    Ngo sees these traits as a spectrum for evaluating AI agency, not binary indicators. 
+
+* **Agency vs. intelligence:** Ngo argues that agency isn't an emergent property of highly intelligent systems but a set of capabilities intentionally developed during training.  
+
+* **Moravec's paradox:** The observation that seemingly complex human cognitive skills are easily replicated by AI, while AI struggles with seemingly simpler tasks.
+
+* **Environment and agency:** We might expect AI trained in a complex environment to develop agentic behavior, as long-term planning and adaptability would be useful. Similarly, a competitive environment could drive even greater agentic behavior if overcoming rivals becomes necessary. 
+
+**Agency and Self-Improvement:** We should expect low-agentic but self-improving systems to become more agentic as they get better at achieving their goals. However, Ngo cautions that if an agent is trained in a highly competitive environment, it might internalize this competitiveness when deployed in the real world, hindering cooperation with other AGIs.
+
+* **Defining Alignment:** Discussions about alignment often focus on methods for aligning AI with human values. But what does "aligned with human values" even mean? Ngo builds on previous work to define two types of alignment:
+    * **Minimalist (Narrow) Alignment:**  Focuses on avoiding catastrophes by aligning AI with the values of its creators, who are hopefully well-intentioned.
+    * **Maximalist (Ambitious) Alignment:**  Attempts to align AI with a universal interpretation of human values in general (if such a thing exists). 
+
+* **Intentions vs. Outcomes:** Ngo emphasizes the distinction between an AI's intentions and the results of its actions. An AI might appear aligned with human values yet cause catastrophic harm due to misinterpreting our instructions. Therefore, an agent's intentions are crucial. Ngo's primary concern is that agents may become intelligent enough to fully understand our desires but simply choose not to follow them due to misaligned motivations learned during training.
+
+* **The Orthogonality Thesis:** This thesis states that any level of intelligence can be combined with any goal, implying that intelligence doesn't necessitate alignment with human values. High-functioning psychopaths exemplify this: they understand that morality motivates others and can exploit this knowledge for manipulation, but they themselves lack those moral motivations. 
+
+* **Inner vs. Outer Alignment:**  The best concise definition I've found: "Outer alignment is the problem of correctly evaluating AI behavior; inner alignment is the problem of making the AI's goals match those evaluations."
+
+* **Designing for Alignment:** We should develop systems (reward functions, optimizers, training environments, etc.) that create selection pressures favoring agents who think in desirable ways, leading to beneficial motivations across a wide range of situations.  One example is how evolution shaped humans to develop altruistic behaviors.
+
+* **AI's Scaling Advantage:** The compounding effect of technological progress has accelerated human advancement, even without significant biological evolution of our brains. AI, able to leverage both cumulative intelligence gains and direct investment in its own hardware (larger "brains," faster processing, etc.), will possess a significant scaling advantage that might lead to an even faster rate of improvement.
+
+* **Arguments Against a Discontinuous Intelligence Takeoff:**
+    1. AGI development is likely to be highly competitive, favoring continuous small improvements over any sudden, massive breakthrough.
+    2. While the increase in compute availability is exponential, it's still a continuous process.
+    3. Historically, technological progress has been largely continuous rather than marked by sharp discontinuities.
+
+* **Methods for Transparent AI:**
+    1. **Interpretability Tools:**  Allow us to analyze a model's inner workings and thought processes.
+    2. **Training for Transparency:**  Incentivize agents to explain their reasoning, for example, through positive reward signals.
+    3. **Inherently Interpretable Architectures:**  Use models like AlphaGo's search algorithm, which offers some insight into its decision-making based on the paths explored.
